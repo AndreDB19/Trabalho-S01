@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <button class="Opcoes" id="opcoesButton" onclick="openSidebar()">
+            <img src="Menu_Icon.png" alt="Icone menu" class="menu-icon">
+        </button>
+    
+        <button class="Perfil" id="perfilButton" onclick="perfilButton()">
+            <p><strong>André</strong></p>
+            <img src="Perfil_Icon.png" alt="icone Perfil" class="perfil-icon">
+         </button>
+    </header>
+    
+    <div class="sidebar" id="sidebar">
+        <h2>Opções</h2>
+        <ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+        </ul>
+        <button id="closeSidebar" onclick="closeSidebar()">Fechar</button>
+    </div>
+    
+    <div class="perfil-sidebar" id="perfilSidebar">
+        <h2>Editar Perfil</h2>
+        <form id="perfilForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <button type="submit" onclick="Forms()">Salvar</button>
+        </form>
+        <button id="closePerfilSidebar" onclick="closePerfilSidebar()">Fechar</button>
+    </div>
+    
+    <section class="aulas">
+        <h1>Próximas Aulas</h1>
+        <div class="aula">
+            <p>S05 | 17:30 - I-17 - NP1:60 NP2:70 - Frequência:20 Faltas:5</p>
+            <span>14/10</span>
+        </div>
+        <div class="aula">
+            <p>M04 | 15:30 - I-11 - NP1:70 NP2:40 - Frequência:20 Faltas:5</p>
+            <span>15/10</span>
+        </div>
+        <div class="aula">
+            <p>S01 | 17:30 - I-15 - NP1:65 NP2:80 - Frequência:20 Faltas:5</p>
+            <span>15/10</span>
+        </div>
+    </section>
+
+    <section class="eventos">
+        <div class="eventos-header">
+            <img class="Email__Icone" src="Letter_Icon.png" alt="Icone Email">
+            <h2>Email de: CRA</h2>
+        </div>
+        <div class="evento">
+            <h3>Palestra: Prevenção e Combate ao Assédio e Outras Formas de Violência no Trabalho</h3>
+            <p>14 out - 2024 • 19:30 > 14 out - 2024 • 21:00</p>
+        </div>
+        
+    </section>
+
+    <section class="eventos">
+        <div class="eventos-header">
+            <img class="Notificacoes__Icone" src="Bell_Icon.png" alt="Sino de Notificacoes">
+            <h2>Notificações:</h2>
+        </div>
+        <div class="evento">
+            <h3>Você tem um evento agendado próximo, confira seu cronograma.</h3>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

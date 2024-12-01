@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificações</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Eventos</h1>
+            
+        </div>
+        <button class="add-section-button" id="addSectionButton">Adicionar Evento</button>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+        <form id="eventForm">
+            <h2>Criar Nova Seção</h2>
+            <label for="eventTitle">Título do Evento:</label>
+            <input type="text" id="eventTitle" required>
+            <label for="eventDescription">Descrição do Evento:</label>
+            <textarea id="eventDescription" required></textarea>
+            <label for="eventDate">Data e Hora:</label>
+            <input type="datetime-local" id="eventDate" required>
+            <button type="submit" class="BotaoEventos">Adicionar Evento</button>
+            <button type="button" id="closeSidebar" class="BotaoEventos">Fechar</button>
+        </form>
+    </aside>
+
+    <div  id="eventSection">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
